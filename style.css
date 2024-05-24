@@ -1,0 +1,40 @@
+.navbar-transparent {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.carousel-inner img {
+        width: 100%;
+        height: 600px; 
+        object-fit: cover;
+ }
+  
+ .nav-link{
+    position: relative;
+ }
+
+ .nav-link:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+ }
+
+ .nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+ }
+ .navbar-toggler {
+    border: none !important; 
+    box-shadow: none !important; 
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar {
+    transition: background-color 0.3s ease; 
+}
